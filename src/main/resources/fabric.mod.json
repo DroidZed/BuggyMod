@@ -3,9 +3,9 @@
 	"id": "buggymod",
 	"version": "${version}",
 	"name": "BuggyMod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "BuggyMod ! Will not make your minecraft buggy (hopefully)! IDK What it does so this will change in time!",
 	"authors": [
-		"Me!"
+		"DroidZed"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -46,7 +46,7 @@
 		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*",
-		"fabric-language-kotlin": ">=1.9.24"
+		"fabric-language-kotlin": ">=1.11.0+kotlin.2.0.0"
 	},
 	"suggests": {
 		"another-mod": "*"
