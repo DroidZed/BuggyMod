@@ -10,13 +10,11 @@ import tn.droidzed.buggymod.skeleton.commands.CommandsLedger
 object Registrar {
 
     fun register() {
-        CommandRegistrationCallback.EVENT.register { dispatcher, registryAccess, environment ->
-            registerCommands(dispatcher, registryAccess, environment)
-        }
+        CommandRegistrationCallback.EVENT.register(::commands)
     }
 
 
-    private fun registerCommands(
+    private fun commands(
         dispatcher: CommandDispatcher<ServerCommandSource?>,
         registryAccess: CommandRegistryAccess,
         environment: CommandManager.RegistrationEnvironment
